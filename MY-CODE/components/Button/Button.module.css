@@ -1,0 +1,19 @@
+.button{
+    font-size: 20px;
+    border-radius: 7px;
+    padding: 15px 25px;
+    border: none;
+    color: #fff;
+    background-color: #008CBA;
+    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #50cdf7;
+  }
+
+  .button:active{
+    transform: translate(1px, 1px);
+    box-shadow: 3px 3px 8px 0 rgba(0,0,0,0.2);
+  }

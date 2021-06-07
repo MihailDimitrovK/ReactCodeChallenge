@@ -1,0 +1,45 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  box-shadow: 5px 10px 15px 0 rgba(71, 71, 71, 0.2);
+  background-color: rgb(248, 246, 246);
+  font-family: sans-serif;
+}
+
+.layout {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 16px;
+  color: rgb(109, 109, 109);
+  text-align: left;
+}
+
+.cells{
+    border: 1px solid rgb(123, 173, 247);
+    padding: 10px;
+}
+
+.link{
+    border: 1px solid rgb(123, 173, 247);
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.link:hover{
+    color: #50cdf7;
+    cursor: pointer;
+}
+
+.error{
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 500px;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: sans-serif;
+  font-size: 25px;
+  color: rgb(151, 85, 79);
+  background-color: rgb(248, 177, 177);
+  text-align: center;
+}

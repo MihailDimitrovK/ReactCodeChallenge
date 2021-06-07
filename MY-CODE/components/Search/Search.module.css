@@ -1,0 +1,31 @@
+.container {
+  margin: 30px auto;
+  padding: 30px;
+  max-width: 1000px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 10px;
+  box-shadow: 5px 10px 15px 0 rgba(0,0,0,0.2);
+  box-sizing: border-box;
+}
+
+.label {
+  font-size: 25px;
+  font-family: sans-serif;
+  color: rgb(77, 77, 77);
+}
+
+.input {
+  width: 100%;
+  margin: 20px auto;
+  
+  border-radius: 7px;
+  border: 2px solid rgb(131, 194, 223);
+  line-height: 40px;
+  font-size: 20px;
+  color: rgb(54, 54, 54);
+}
+
+.input:focus {
+  outline: none;
+  border-color: #32ee90;
+}
