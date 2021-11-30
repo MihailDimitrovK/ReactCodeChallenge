@@ -29,7 +29,7 @@ const Highlights = () => {
   }, [currentCompanyId])
 
   highlights
-    ? Object.keys(highlights.data.data).map((i) => {
+    && Object.keys(highlights.data.data).map((i) => {
         if (highlights.data.data[i]["classification"] === "negative") {
           negative.push(highlights.data.data[i])
         } else if (highlights.data.data[i]["classification"] === "positive") {
@@ -38,7 +38,7 @@ const Highlights = () => {
           neutral.push(highlights.data.data[i])
         }
       })
-    : null
+    
 
   negative.sort((a, b) => b.weight - a.weight)
   positive.sort((a, b) => b.weight - a.weight)

@@ -28,7 +28,7 @@ const Relations = () => {
   let arrDate = []
 
   relations
-    ? relations.data.data.forEach((element) => {
+    && relations.data.data.forEach((element) => {
         arrDate.push(element.name)
         element.functions.forEach((e) => {
           let date1 = new Date(e.valid_from)
@@ -45,7 +45,7 @@ const Relations = () => {
           arrDate.push(diffDays)
         })
       })
-    : null
+    
 
   return (
     <div className={styles.container}>

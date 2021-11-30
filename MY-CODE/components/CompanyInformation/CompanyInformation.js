@@ -22,7 +22,7 @@ const CompanyInformation = () => {
     }
   }, [currentCompanyId])
 
-  let info = generalInformation ? (
+  let info = generalInformation && (
     <tr>
       <td className={styles.cells}>
         {generalInformation.data.data["vat"] ? "registered" : "not registered"}
@@ -58,14 +58,14 @@ const CompanyInformation = () => {
       </td>
       <td className={styles.cells}>
         {generalInformation.data.data["company_secondary_names"]
-          ? generalInformation.data.data["company_secondary_names"][0].name
-          : null}
+          && generalInformation.data.data["company_secondary_names"][0].name
+          }
       </td>
       <td className={styles.cells}>
         {generalInformation.data.data["risk_assessment"]}
       </td>
     </tr>
-  ) : null
+  )
 
   return (
     <div className={styles.container}>
